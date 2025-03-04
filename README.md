@@ -162,29 +162,15 @@ Ensure MySQL is running and the db.properties file has the correct credentials.
 2.**Tomcat Deployment Issues**:
 Ensure Tomcat is running and the .war file is correctly placed in the webapps directory.
 
-3.**Empty Balance**:
-Verify the BalanceDAO.getBalance() method is correctly fetching the balance from the database.
+3.**Empty Balance**: Verify the BalanceDAO.getBalance() method is correctly fetching the balance from the database.
 ---
-## Contributing
+## Contributing 
+
 Feel free to contribute to this project by opening issues or submitting pull requests.
+
 ---
 ## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-Copy
-
----
-
-### **How to Use This**
-1. Copy the above Markdown content.
-2. Open your `README.md` file in your project.
-3. Replace the existing content with the copied Markdown content.
-4. Save the file and commit it to your repository:
-
-   ```bash
-   git add README.md
-   git commit -m "Updated README with proper formatting"
-   git push origin main
-   ```
 
 ---
