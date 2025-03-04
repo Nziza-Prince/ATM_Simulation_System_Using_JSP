@@ -14,8 +14,8 @@ public class DepositDAO {
 
             stmt.setDouble(1, amount);
             stmt.setInt(2, user.getId());
-            stmt.executeUpdate();
-            return true;
+            int rowsUpdated = stmt.executeUpdate();
+            return rowsUpdated > 0; // Return true if the balance was updated
         } catch (Exception e) {
             e.printStackTrace();
             return false;

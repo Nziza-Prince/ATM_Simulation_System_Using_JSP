@@ -1,5 +1,6 @@
 package com.atm.controller;
 
+import com.atm.dao.BalanceDAO;
 import com.atm.dao.WithdrawDAO;
 import com.atm.model.User;
 
@@ -18,12 +19,18 @@ public class WithdrawServlet extends HttpServlet {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
 
+        // Refresh the user's balance from the database
+        BalanceDAO balanceDAO = new BalanceDAO();
+        double currentBalance = balanceDAO.getBalance(user);
+        user.setBalance(currentBalance); // Update the balance in the session
+        session.setAttribute("user", user); // Save the updated user object in the session
+
         System.out.println("Withdraw amount: " + amount); // Debug statement
         System.out.println("User balance before withdrawal: " + user.getBalance()); // Debug statement
 
         WithdrawDAO withdrawDAO = new WithdrawDAO();
         if (withdrawDAO.withdraw(user, amount)) {
-            // Update the user's balance in the session
+            // Update the user's balance in the session after withdrawal
             user.setBalance(user.getBalance() - amount);
             session.setAttribute("user", user);
             System.out.println("User balance after withdrawal: " + user.getBalance()); // Debug statement
