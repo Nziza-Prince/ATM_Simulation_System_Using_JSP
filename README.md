@@ -16,7 +16,7 @@ Before running the project, ensure you have the following installed:
 
 ---
 
-## Setup Instructions
+## 2.Setup Instructions
 
 ### 1. Clone the Repository
 Clone the project repository to your local machine:
@@ -24,19 +24,18 @@ Clone the project repository to your local machine:
 ```bash
 git clone https://github.com/Nziza-Prince/ATM_Simulation_System_Using_JSP.git
 cd ATM_Simulation_System_Using_JSP
-2. Set Up MySQL Database
-Start MySQL Server:
+```
+## 2. Set Up MySQL Database
 
-Ensure MySQL is running on your machine.
+### 1.Start MySQL Server:
+1.Ensure MySQL is running on your machine.
 
-Create the Database:
+### 2.Create the Database:
 
 Open MySQL shell or a MySQL client (e.g., MySQL Workbench).
-
 Run the following SQL commands to create the database and table:
 
-sql
-Copy
+```bash
 CREATE DATABASE atm_db;
 USE atm_db;
 
@@ -50,80 +49,95 @@ CREATE TABLE users (
 INSERT INTO users (username, password, balance) VALUES
 ('user1', 'pass1', 1000.00),
 ('user2', 'pass2', 500.00);
-Update Database Configuration:
+```
+
+### 3.Update Database Configuration:
 
 Open the db.properties file in src/main/resources.
-
 Update the database URL, username, and password:
 
-properties
-Copy
+```bash
 db.url=jdbc:mysql://localhost:3306/atm_db
 db.user=your_mysql_username
 db.password=your_mysql_password
-3. Build the Project
-Navigate to the Project Directory:
+```
+---
+## 3. Build the Project
 
-bash
-Copy
+
+### 1.Navigate to the Project Directory:
+
+```bash
 cd ATM_Simulation_System_Using_JSP
-Build the Project Using Maven:
+```
 
-bash
-Copy
+### 2.Build the Project Using Maven:x
+
+```bash
 mvn clean install
+```
+
 This will compile the project and package it into a .war file.
 
-4. Deploy the Application
-Copy the .war File:
+---
+
+## 4. Deploy the Application
+
+### 1.Copy the .war File:
 
 Locate the generated .war file in the target directory.
-
 Copy it to the webapps directory of your Tomcat installation.
 
 Example:
 
-bash
-Copy
+```bash
 cp target/ATM_Simulation_System_Using_JSP.war /path/to/tomcat/webapps/
-Start Tomcat:
+```
+
+### 2.Start Tomcat:
 
 Navigate to the bin directory of your Tomcat installation.
-
 Start Tomcat:
 
-bash
-Copy
+```bash
+
 ./startup.sh  # On Linux/Mac
 startup.bat    # On Windows
-Access the Application:
+```
 
+### 3.Access the Application:
 Open your browser and go to:
 
-Copy
+
 http://localhost:8080/ATM_Simulation_System_Using_JSP/
-Using the Application
-1. Login
+
+---
+## Using the Application
+
+
+### 1. Login
+
 Use the following credentials to log in:
 
-Username: user1
+    Username: user1
+    Password: pass1
 
-Password: pass1
 
-2. Features
-Deposit Money: Navigate to the deposit page and enter the amount to deposit.
+### 2. Features:
+1. **Deposit Money** : Navigate to the deposit page and enter the amount to deposit.
 
-Withdraw Money: Navigate to the withdraw page and enter the amount to withdraw.
+2. **Withdraw Money**: Navigate to the withdraw page and enter the amount to withdraw.
 
-Check Balance: View your account balance on the balance page.
+3.**Check Balance**: View your account balance on the balance page.
 
-Change Language: Switch between English, Spanish, and French on the login page.
+4.**Change Language**: Switch between English, Spanish, and French on the login page.
 
-3. Logout
+### 3. Logout
 Click the Logout button on the dashboard to end your session.
 
-Project Structure
-Copy
+---
+## Project Structure
+```bash
 ATM_Simulation_System_Using_JSP/
 ├── src/
 │   ├── main/
@@ -138,23 +152,23 @@ ATM_Simulation_System_Using_JSP/
 │   └── test/                    # Unit Tests
 ├── pom.xml                      # Maven Configuration
 └── README.md                    # Project Documentation
-Troubleshooting
-Database Connection Issues:
+```
+---
+### Troubleshooting
 
+1.**Database Connection Issues**:
 Ensure MySQL is running and the db.properties file has the correct credentials.
 
-Tomcat Deployment Issues:
-
+2.**Tomcat Deployment Issues**:
 Ensure Tomcat is running and the .war file is correctly placed in the webapps directory.
 
-Empty Balance:
-
+3.**Empty Balance**:
 Verify the BalanceDAO.getBalance() method is correctly fetching the balance from the database.
-
-Contributing
+---
+## Contributing
 Feel free to contribute to this project by opening issues or submitting pull requests.
-
-License
+---
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Copy
@@ -171,7 +185,6 @@ Copy
    git add README.md
    git commit -m "Updated README with proper formatting"
    git push origin main
-Why This Works
-Markdown Syntax: GitHub uses Markdown for formatting. The above content uses proper Markdown syntax (e.g., # for headings, ``` for code blocks, - for lists, etc.).
+   ```
 
-Readability: Proper formatting makes the README easier to read and navigate.
+---
