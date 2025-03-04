@@ -1,27 +1,29 @@
-ATM Simulation Project
-This is a Java-based ATM simulation application built using Servlets, JSP, and MySQL. It follows the MVC architecture and includes features like user authentication, deposit, withdrawal, balance checking, and language switching.
+# ATM Simulation Project
 
-Prerequisites
+This is a Java-based ATM simulation application built using **Servlets**, **JSP**, and **MySQL**. It follows the **MVC architecture** and includes features like user authentication, deposit, withdrawal, balance checking, and language switching.
+
+---
+
+## Prerequisites
+
 Before running the project, ensure you have the following installed:
 
-Java Development Kit (JDK): Version 11 or higher.
+1. **Java Development Kit (JDK)**: Version 11 or higher.
+2. **Apache Tomcat**: Version 10 or higher.
+3. **MySQL**: Version 8 or higher.
+4. **Maven**: For dependency management.
+5. **Git**: For cloning the repository.
 
-Apache Tomcat: Version 10 or higher.
+---
 
-MySQL: Version 8 or higher.
+## Setup Instructions
 
-Maven: For dependency management.
-
-Git: For cloning the repository.
-
-Setup Instructions
-1. Clone the Repository
+### 1. Clone the Repository
 Clone the project repository to your local machine:
 
-bash
-Copy
-git clone https://github.com/your-username/atm-simulation.git
-cd atm-simulation
+```bash
+git clone https://github.com/Nziza-Prince/ATM_Simulation_System_Using_JSP.git
+cd ATM_Simulation_System_Using_JSP
 2. Set Up MySQL Database
 Start MySQL Server:
 
@@ -64,7 +66,7 @@ Navigate to the Project Directory:
 
 bash
 Copy
-cd atm-simulation
+cd ATM_Simulation_System_Using_JSP
 Build the Project Using Maven:
 
 bash
@@ -83,7 +85,7 @@ Example:
 
 bash
 Copy
-cp target/atm-simulation.war /path/to/tomcat/webapps/
+cp target/ATM_Simulation_System_Using_JSP.war /path/to/tomcat/webapps/
 Start Tomcat:
 
 Navigate to the bin directory of your Tomcat installation.
@@ -99,7 +101,7 @@ Access the Application:
 Open your browser and go to:
 
 Copy
-http://localhost:8080/atm-simulation/
+http://localhost:8080/ATM_Simulation_System_Using_JSP/
 Using the Application
 1. Login
 Use the following credentials to log in:
@@ -122,7 +124,7 @@ Click the Logout button on the dashboard to end your session.
 
 Project Structure
 Copy
-atm-simulation/
+ATM_Simulation_System_Using_JSP/
 ├── src/
 │   ├── main/
 │   │   ├── java/
@@ -154,3 +156,22 @@ Feel free to contribute to this project by opening issues or submitting pull req
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+Copy
+
+---
+
+### **How to Use This**
+1. Copy the above Markdown content.
+2. Open your `README.md` file in your project.
+3. Replace the existing content with the copied Markdown content.
+4. Save the file and commit it to your repository:
+
+   ```bash
+   git add README.md
+   git commit -m "Updated README with proper formatting"
+   git push origin main
+Why This Works
+Markdown Syntax: GitHub uses Markdown for formatting. The above content uses proper Markdown syntax (e.g., # for headings, ``` for code blocks, - for lists, etc.).
+
+Readability: Proper formatting makes the README easier to read and navigate.
