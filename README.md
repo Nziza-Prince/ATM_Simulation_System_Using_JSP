@@ -162,13 +162,12 @@ Ensure MySQL is running and the db.properties file has the correct credentials.
 2.**Tomcat Deployment Issues**:
 Ensure Tomcat is running and the .war file is correctly placed in the webapps directory.
 
-3.**Empty Balance**: Verify the BalanceDAO.getBalance() method is correctly fetching the balance from the database.
+3.**Empty Balance**: 
+Verify the BalanceDAO.getBalance() method is correctly fetching the balance from the database.
 ---
 ## Contributing 
-
 Feel free to contribute to this project by opening issues or submitting pull requests.
 
----
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
