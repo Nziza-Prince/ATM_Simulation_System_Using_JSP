@@ -1,0 +1,133 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  <!-- Login Servlet -->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.atm.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+   Deposit Servlet
+  <servlet>
+    <servlet-name>DepositServlet</servlet-name>
+    <servlet-class>com.atm.controller.DepositServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DepositServlet</servlet-name>
+    <url-pattern>/DepositServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Withdraw Servlet -->
+  <servlet>
+    <servlet-name>WithdrawServlet</servlet-name>
+    <servlet-class>com.atm.controller.WithdrawServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WithdrawServlet</servlet-name>
+    <url-pattern>/WithdrawServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Transfer Servlet -->
+  <servlet>
+    <servlet-name>TransferServlet</servlet-name>
+    <servlet-class>com.atm.controller.TransferServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TransferServlet</servlet-name>
+    <url-pattern>/TransferServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Balance Servlet -->
+  <servlet>
+    <servlet-name>BalanceServlet</servlet-name>
+    <servlet-class>com.atm.controller.BalanceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BalanceServlet</servlet-name>
+    <url-pattern>/BalanceServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Register Servlet -->
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.atm.controller.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>balance</servlet-name>
+    <jsp-file>/balance.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>balance</servlet-name>
+    <url-pattern>/balancePage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>dashboard</servlet-name>
+    <jsp-file>/dashboard.jsp</jsp-file>
+
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dashboard</servlet-name>
+    <url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deposit</servlet-name>
+    <jsp-file>/deposit.jsp</jsp-file>
+
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deposit</servlet-name>
+    <url-pattern>/depositPage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>index</servlet-name>
+    <jsp-file>/index.jsp</jsp-file>
+
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>register</servlet-name>
+    <jsp-file>/register.jsp</jsp-file>
+
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/registerPage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>transfer</servlet-name>
+    <jsp-file>/transfer.jsp</jsp-file>
+
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>transfer</servlet-name>
+    <url-pattern>/transfer</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>withdraw</servlet-name>
+    <jsp-file>/withdraw.jsp</jsp-file>
+
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>withdraw</servlet-name>
+    <url-pattern>/withdrawPage</url-pattern>
+  </servlet-mapping>
+</web-app>
